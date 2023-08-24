@@ -8,4 +8,4 @@ int main()
 	log.stop();
 }
 冒烟测试速率：
-![image](https://github.com/WindForNorth/PROJECTS/simpleAsyncLoggingSystem/image-20230824181239067.png)
+![image](https://github.com/WindForNorth/PROJECTS/blob/main/simpleAsyncLoggingSystem/image-20230824181239067.png)
