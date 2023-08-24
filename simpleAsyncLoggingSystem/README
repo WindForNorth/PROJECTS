@@ -1,0 +1,9 @@
+该项目为一个简单的异步日志系统，使用简便。可应用于一般日志记录，使用方式如下：
+#include "AsyncLogging.h"
+int main()
+{
+	AsyncLogging log(baseFilename , singleFileSize , flushinterval);
+	log.start();
+	log.append("log");
+	log.stop();
+}
