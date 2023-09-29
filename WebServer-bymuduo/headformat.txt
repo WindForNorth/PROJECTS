@@ -1,0 +1,67 @@
+基本逻辑：
+1）如果客户端请求是一个范围则返回一个范围，此时如果收到请求前的在范围内的数据已经发送，则不用重复发送
+2）如果客户端请求是只有一个起始点，那么认为是从这个起始点开始到最后，直到收到新的请求
+3）在只收到一个无range的请求时只需要回答总长度，然后继续发送即可
+
+Content-Length:
+45809664
+
+Content-Range:
+bytes 31981568-77791231/78321982
+
+Content-Type:
+video/mp4
+
+Date:
+Tue, 26 Sep 2023 03:34:32 GMT
+
+Etag:
+"5c4fa347-4ab193e"
+
+Last-Modified:
+Tue, 29 Jan 2019 00:50:15 GMT
+
+Server:
+nginx
+
+Strict-Transport-Security:
+max-age=31536000
+
+:authority:
+www.cnuseful.com
+
+
+:method:
+GET
+:path:
+/testdown/video/test.mp4
+:scheme:
+https
+Accept:
+*/*
+Accept-Encoding:
+identity;q=1, *;q=0
+Accept-Language:
+zh-CN,zh;q=0.9,zh-TW;q=0.8,en;q=0.7,ja;q=0.6
+Cookie:
+Hm_lvt_bbfe044abceb6a99b3f144aaebafd3c8=1695698844; Hm_lpvt_bbfe044abceb6a99b3f144aaebafd3c8=1695698844; __gads=ID=22db6bd66cc6ff4c-2291de6a12e400ae:T=1695698850:RT=1695698850:S=ALNI_MYg4xMkj-KGHU4eeMDyDRDmmR1dPg; __gpi=UID=00000d9527889180:T=1695698850:RT=1695698850:S=ALNI_Ma22S6SWvPAy6YdPxmV0HsM-2FcUA
+If-Range:
+"5c4fa347-4ab193e"
+Range:
+bytes=31981568-77791231
+Referer:
+https://www.cnuseful.com/testdown/video/test.mp4
+Sec-Ch-Ua:
+"Chromium";v="116", "Not)A;Brand";v="24", "Google Chrome";v="116"
+Sec-Ch-Ua-Mobile:
+?0
+Sec-Ch-Ua-Platform:
+"Windows"
+Sec-Fetch-Dest:
+video
+Sec-Fetch-Mode:
+no-cors
+Sec-Fetch-Site:
+same-origin
+User-Agent:
+LogStatistic
